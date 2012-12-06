@@ -1,4 +1,8 @@
 PrelaunchVf::Application.routes.draw do
+  get "users/sign_up"
+  get "users/sign_in"
+  get "users/thank_you"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
