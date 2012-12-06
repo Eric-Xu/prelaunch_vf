@@ -9,9 +9,14 @@ describe "Users" do
       page.should have_selector('h1', text: 'Sign up')
     end
 
-    it "should have the title 'Sign_up'" do
+	it "should have the base title" do
       visit '/users/sign_up'
-      page.should have_selector('title', text: 'Vouchflow | Sign up')
+      page.should have_selector('title', text: 'Vouchflow')
+    end
+    
+    it "should not have a custom title" do
+      visit '/users/sign_up'
+      page.should_not have_selector('title', text: '| Sign up')
     end
   end
 
