@@ -1,7 +1,7 @@
 PrelaunchVf::Application.routes.draw do
-  get "users/sign_up"
-  get "users/sign_in"
-  get "users/thank_you"
+  root to: 'users#sign_up'
+  match '/sign_in',   to: 'users#sign_in'
+  match '/thank_you', to: 'users#thank_you'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
