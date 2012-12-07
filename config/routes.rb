@@ -3,6 +3,7 @@ PrelaunchVf::Application.routes.draw do
   match '/sign_in',   to: 'users#sign_in'
   match '/thank_you', to: 'users#thank_you'
 
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
