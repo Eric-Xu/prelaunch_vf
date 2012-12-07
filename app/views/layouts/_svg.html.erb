@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 <script type="text/javascript">
   (function(){
-=======
-<p>Insert D3 splineTransition.html</p>
-
-<script type="text/javascript">
-	  (function(){
->>>>>>> a2112512f121690282751cb71db54967530ca8bd
 	var n = 243,
 	    duration = 750,
 	    now = new Date(Date.now() - duration),
@@ -14,11 +7,7 @@
 	    data = d3.range(n).map(function() { return 0; });
 
 	var margin = {top: 6, right: 0, bottom: 20, left: 40},
-<<<<<<< HEAD
 	    width = 940 - margin.right,
-=======
-	    width = 960 - margin.right,
->>>>>>> a2112512f121690282751cb71db54967530ca8bd
 	    height = 120 - margin.top - margin.bottom;
 
 	var x = d3.time.scale()
@@ -33,11 +22,7 @@
 	    .x(function(d, i) { return x(now - (n - 1 - i) * duration); })
 	    .y(function(d, i) { return y(d); });
 
-<<<<<<< HEAD
 	var svg = d3.select("#chart").append("p").append("svg")
-=======
-	var svg = d3.select("body").append("p").append("svg")
->>>>>>> a2112512f121690282751cb71db54967530ca8bd
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	    .style("margin-left", -margin.left + "px")
@@ -67,7 +52,7 @@
 	    //other DOM events to consider include scroll, mousemove, click, keypress
 	    .on("keypress", function() { ++count; })
 	    .on("click", function() { ++count; });
-	    
+
 	function tick() {
 
 	  // update the domains
