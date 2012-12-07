@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+/* Sass mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
 /* universal */
 
 html {
@@ -20,10 +24,9 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* typography */
@@ -65,9 +68,24 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }  
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+/* svg */
+
+svg {
+  font: 10px sans-serif;
+}  
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+}  
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
 }
